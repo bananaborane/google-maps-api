@@ -1,0 +1,12 @@
+#map {
+    height: 500px;
+}
+
+#search {
+    width: 300px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
