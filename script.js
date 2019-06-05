@@ -6,8 +6,9 @@ function createMap (){
             lat: 40.758701,
             lng: -111.876183
         },
-        zoom: 10,
+        zoom: 10, // zoom is from 1-17
         // mapTypeId: google.maps.MapTypeId.HYBRID
+        // makes map view hybrid
     };
 
     map = new google.maps.Map(document.getElementById('map'), options)
@@ -22,7 +23,7 @@ function createMap (){
     var markers = [];
     
     searchBox.addListener('places_changed', function () {
-      var places = searchBox.getPlaces();
+      var places = searchBox.getPlaces(); // retrieves a list of places according to the query
   
       if (places.length == 0)
         return;
